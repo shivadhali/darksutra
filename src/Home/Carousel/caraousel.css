@@ -1,0 +1,39 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+    height: 100%;
+  }
+  
+  .next {
+    right: 0;
+    height: 100%;
+  }
+  
