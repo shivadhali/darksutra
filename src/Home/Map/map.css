@@ -1,0 +1,12 @@
+.map_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.map_frame {
+  width: 90%;
+}

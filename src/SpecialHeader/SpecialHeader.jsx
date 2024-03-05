@@ -1,6 +1,7 @@
 import React from "react";
 import PocketBase from "pocketbase";
 import { useEffect, useState } from "react";
+import SearchIcon from "./search.png"
 
 const url = "https://test-tod.pockethost.io/";
 const client = new PocketBase(url);
@@ -21,11 +22,11 @@ export default function SpecialHeader() {
   return (
     <nav>
       <div className="logo">
-        <img
+        <a href="/"><img
           src={require("../images/only name.png")}
           alt=""
           style={{ height: "70px" }}
-        />
+        /></a>
       </div>
       <input type="checkbox" name="" id="check" />
       <label htmlFor="check" className="menu-btn">
@@ -33,6 +34,12 @@ export default function SpecialHeader() {
       </label>
 
       <ul className="list" id="list">
+        {/* <li>
+        <input type="checkbox" name="" id="search" />
+      <label htmlFor="search" className="menu-btn">
+        <img src={SearchIcon} alt="ssss" />
+      </label>
+        </li> */}
         <li>
           <a href="/">HOME</a>
         </li>
@@ -54,14 +61,19 @@ export default function SpecialHeader() {
           <a href="/product">ALL PACKAGES</a>
         </li>
         <li>
-          <a href="/about.html">ABOUT US</a>
+          <a href="/about">ABOUT US</a>
         </li>
         <li>
-          <a href="/#">CONTACT US</a>
+          <a href="/contact">CONTACT US</a>
         </li>
         <li>
           <a href="/team.html">OUR TEAM</a>
         </li>
+        {/* <li>
+        
+        <a href=""><img src={SearchIcon} alt="ssss" style={{height:'25px'}} /></a>
+        
+        </li> */}
       </ul>
     </nav>
   );

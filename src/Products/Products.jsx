@@ -25,27 +25,43 @@ const Products = () => {
           );
           setProduct(filteredProduct[0]);
         } else {
-          console.log(error);
+          console.log(res);
         }
       });
   }, []);
 
   return (
-    <div className="product">
-      <div className="product_image">
-        <img
-          className="product_image_casaroul"
-          src={
-            "https://test-tod.pockethost.io/api/files/products/" +
-            product.id +
-            "/" +
-            product.image
-          }
-          alt=""
-        />
+    <div className="productpage_container">
+      <div className="product basicproduct">
+      <div className="img">
+        <div className="product_image">
+          <img
+            className="product_image_casaroul"
+            src={
+              "https://test-tod.pockethost.io/api/files/products/" +
+              product.id +
+              "/" +
+              product.image
+            }
+            alt=""
+          />
+        </div>
       </div>
-      <div className="product_desc">{product.name}</div>
+      <div className="product_description">
+        <div className="product_desc"><h1>{product.name}</h1></div>
+        <div className="product_price">
+          <span className="offer">Original Price: ₹{product.original_price}</span>
+          <span>Offer Price: ₹{product.offer_price}</span>
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: product.desc }}></div>
+            <button>
+              <a href={`https://wa.me/917533030500?text=Hello There, I would like to know more about ${product.name}`}>Send Message</a>
+            </button>
+      </div>
+      
     </div>
+    </div>
+    
   );
 };
 

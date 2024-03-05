@@ -1,0 +1,15 @@
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(255, 100, 100);
+}
+
+.offer {
+  text-decoration: line-through;
+  color: rgb(89, 89, 15);
+}
+
+.product_container img {
+  object-fit: cover;
+}

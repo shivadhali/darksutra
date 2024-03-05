@@ -1,0 +1,51 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px 10px 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 100px;
+    /* background-image: url(images/rainbow.jpg); */
+}
+
+.contact_info {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_info p {
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(107, 8, 8);
+}
+
+
+@media  (max-width: 950px) {
+    .contact {
+        font-size: 70px;
+    }
+    
+}
+
+@media  (max-width: 450px) {
+    .contact {
+        font-size: 55px;
+    }
+    
+
+}

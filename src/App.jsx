@@ -9,6 +9,10 @@ import AllPackages from "./AllPackages/AllPackages";
 import Footer from "./Footer/Footer";
 import FilteredCategory from "./FilteredCategory/FilteredCategory";
 import Products from "./Products/Products";
+import About from "./About/About";
+import WhatsApp from "./WhatsApp/WhatsApp";
+import Contact from "./Home/Contact/Contact";
+import rainbow from "./images/rainbow.jpg";
 
 function App() {
   return (
@@ -21,8 +25,11 @@ function App() {
           <Route path="/product" element={<AllPackages />} />
           <Route path="/category/:id" element={<FilteredCategory />} />
           <Route path="/product/:id" element={<Products />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
+      <WhatsApp />
       <Footer />
     </div>
   );

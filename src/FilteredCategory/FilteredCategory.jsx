@@ -12,7 +12,7 @@ client.autoCancellation(false);
 const FilteredCategory = () => {
   const [products, setProducts] = useState([]);
   const [catName, setCatName] = useState([]);
-  const [catNames, setCatNames] = useState([]);
+  // const [catNames, setCatNames] = useState([]);
   const location = useLocation();
   const category = location.pathname.split("/")[2];
   useEffect(() => {
@@ -66,6 +66,10 @@ const FilteredCategory = () => {
                     />
                     {/* <Link to={`/product/${cat.id}`}> */}
                     <p>{cat.name}</p>
+                    <span className="pricing">
+                      <span className="offer">₹{cat.offer_price} </span> 
+                      <span>₹{cat.original_price}</span>
+                      </span>
                   </Link>
                 </div>
               ))}

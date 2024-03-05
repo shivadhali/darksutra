@@ -76,7 +76,7 @@ nav ul li a.active {
 .submenu {
   display: none;
   position: fixed;
-  background-color: #ff90bc;
+  /* background-color: #ff90bc; */
   height: fit-content;
 }
 
@@ -91,6 +91,7 @@ nav ul li:hover .submenu {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -143,12 +144,13 @@ div h2 {
   padding-top: 5px;
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   width: 180px;
   text-align: center;
   border-top: 1px solid rgb(224, 224, 235);
+  color: black;
 }
 
 .product-image {
@@ -225,6 +227,18 @@ div h2 {
   letter-spacing: 2px;
 }
 
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(255, 100, 100);
+}
+
+.offer {
+  text-decoration: line-through;
+  color: rgb(89, 89, 15);
+}
+
 @media (max-width: 950px) {
   nav .menu-btn {
     display: block;
@@ -254,6 +268,7 @@ div h2 {
   nav ul li a {
     font-size: 18px;
     display: block;
+    color: black;
   }
 
   nav #check:checked ~ ul {

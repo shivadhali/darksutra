@@ -1,0 +1,117 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px 10px 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 100px;
+    /* background-image: url(images/rainbow.jpg); */
+}
+
+.who {
+    margin-top: 50px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.who h1 {
+    font-size: 50px;
+}
+
+.who p {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+/* .vision {
+    margin-top: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.vision h1 {
+    font-size: 50px;
+}
+
+.vision p {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+
+.what {
+    margin-top: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.what h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.what ul {
+    margin-top: 30px;
+}
+.what li {
+    list-style: none;
+    text-align: left;
+    font-size: 25px;
+    margin: 10px;
+} */
+
+p span {
+    font-weight: 1000;
+}
+
+
+@media  (max-width: 950px) {
+    
+    .about {
+        font-size: 70px;
+    }
+    .who p {
+        margin-top: 30px;
+        font-size: 25px;
+        text-align: justify;
+    }
+    
+}
+
+@media  (max-width: 450px) {
+    .about-container {
+        padding: 20px;
+    
+        }
+    .about {
+        font-size: 55px;
+    }
+    .who p {
+        margin-top: 30px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+}

@@ -42,6 +42,10 @@ const AllPackages = () => {
                     />
                     {/* <Link to={`/product/${cat.id}`}> */}
                     <p>{cat.name}</p>
+                    <span className="pricing">
+                      <span className="offer">₹{cat.original_price} </span>
+                      <span>₹{cat.offer_price}</span>
+                    </span>
                   </Link>
                 </div>
               ))}

@@ -3,6 +3,7 @@ import PocketBase from "pocketbase";
 import { useEffect, useState } from "react";
 import "../../styles.css";
 import { Link } from "react-router-dom";
+import "./category.css";
 
 const url = "https://test-tod.pockethost.io/";
 const client = new PocketBase(url);
@@ -29,7 +30,7 @@ const Category = () => {
           <div className="flex-container">
             <div className="container" id="container">
               {category.map((cat) => (
-                <div className="product" key={cat.id}>
+                <div className="product product_category" key={cat.id}>
                   <Link to={`/category/${cat.id}`}>
                     <img
                       src={
